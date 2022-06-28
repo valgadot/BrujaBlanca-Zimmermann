@@ -15,12 +15,12 @@ Azul Pastel: #5f7daf
         margin: 0px;
     }
     img {
-        height: 10vh;
-        width: 30vh;
+        height: 20vh;
+        width: 60vh;
     }
     
     .cabecera__lista {
-        font-size: small
+        font-size: medium
     }
 
    
@@ -35,26 +35,25 @@ Azul Pastel: #5f7daf
     }
     
     #imagen1 {
-        display: flex;
-        height: 60vw;
-        width: 60vw;
-        justify-items: flex-end;
-
-
+        height: 100vw;
+        width: 100vw;
+        padding-top: 10vh;
     }
 
     #imagen2 {
-        height: 60vw;
-        width: 60vw;
+        height: 100vw;
+        width: 100vw;
         padding-top: 10vh;
 
     }#imagen3 {
-        height: 60vw;
-        width: 60vw;
+        height: 100vw;
+        width: 100vw;
+        padding-top: 10vh;
 
     }#imagen4 {
-        height: 60vw;
-        width: 60vw;
+        height: 100vw;
+        width: 100vw;
+        padding-top: 10vh;
     }
     
 
@@ -68,12 +67,23 @@ Azul Pastel: #5f7daf
 
   section.store-item-1 {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-gap: 10vh; 
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
         justify-items: center;
+        justify-content: space-between;
        
     }
 
+    .store-item-1 {
+        padding: 10vh;
+
+    }
+
+    #imagen1:hover {
+        transition: all 2s ease-in;
+        transform: translateX(100px);
+    }
 }
 
 @media only screen and (min-width: 961px) {
@@ -83,8 +93,36 @@ Azul Pastel: #5f7daf
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
+   
 }
     
+/* Transiciones y Animaciones */
+
+.wallpaper__titulo {
+    border-radius: 15vh;
+    height: fit-content;
+    width:fit-content;
+    margin: 50px auto;
+    background-color: black;
+}
+.wallpaper__subtitulo {
+    border-radius: 15vh;
+    height: fit-content;
+    width:fit-content;
+    margin: 50px auto;
+    background-color: black;
+}
+
+.wallpaper__titulo:hover {
+    transform: scale(2);
+    transition: all 4s;
+}
+
+.wallpaper__subtitulo:hover {
+    transform: scale(3);
+    transition: all 4s;
+
+}
 
 
 body {
