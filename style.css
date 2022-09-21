@@ -7,8 +7,10 @@ Crema: #f7dfd3
 Rosa Claro: #e2c3c8
 Lavanda Claro: #afafc7
 Azul Pastel: #5f7daf
+
 */
 
+    
 @media only screen and (max-width:460px) {
     body {
         background-color:  #f7dfd3;
@@ -129,6 +131,7 @@ body {
     display: grid;
     position: relative;
 
+
 }
 
 *{
@@ -198,13 +201,7 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-footer {
-    height: 200px;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 
@@ -287,9 +284,9 @@ background-image {
 }
 
 p {
-    display: flex;
     text-decoration: none;
     justify-content: center;
+    align-items: center;
 }
 
 hr {  
@@ -314,4 +311,14 @@ padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10vh;
+}
+body.grid.container {
+    display: grid;
+    height: 200vh;
+}
+
+.productos__tienda__items{
+    display: grid;
+    height: 40px;
+    width: 30px;
 }
