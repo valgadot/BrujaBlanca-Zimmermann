@@ -1,0 +1,24 @@
+/* Ejemplos de mapas 
+1 tienen una key y un valor 
+2 un grupo de propiedades no necesariamente 
+de la misma familia*/
+
+$standard: (
+    color-standard: #ccc,
+    bg-standar: #b3e4d5,
+    mx-auto: 0 auto, 
+    flexbox-standard: flex
+);
+
+
+$premium: (
+    color-standard: black,
+    bg-standar: gold,
+    mx-auto: 0 auto, 
+    flexbox-standard: grid
+); 
+
+.standard {
+    background-color: map-get($standard, bg-standard);
+}
+

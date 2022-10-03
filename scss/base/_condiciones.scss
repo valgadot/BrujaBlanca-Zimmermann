@@ -1,0 +1,22 @@
+// condiciones 
+//si me amas, hace tal cosa
+
+/*
+if (tu viejo === zapatero) {
+    zarpale la lata 
+} else {
+    nos vamo pa la esquina
+}*/
+
+@mixin condicion ($colores) {
+    background-color: $colores;
+    @if $colores == orange {
+        border: 1px solid black
+    } @else {
+        border: 4px solid gray;
+    }
+}
+
+.bg-condicion {
+    @include condicion(blue)
+}

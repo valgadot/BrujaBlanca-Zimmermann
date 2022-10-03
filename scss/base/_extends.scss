@@ -1,0 +1,23 @@
+/*Bolsitas con propiedades que podemos reutilizar 
+en muchos lugares*/
+
+%botones {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px; 
+}
+
+.error {
+    background-color: red ;
+    @extend %botones;
+}
+
+.accept {
+    background-color: green;
+    @extend %botones;
+}
+
+.disabled {
+    background-color: grey;
+    @extend %botones;
+}

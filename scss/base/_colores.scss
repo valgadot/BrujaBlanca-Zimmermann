@@ -1,0 +1,22 @@
+$color-central: #900;
+$color-secundario: #090; 
+
+.border-menu {
+    border: 1px solid darken($color-central,20%)
+}
+
+.bg-fotos {
+    background-color: $color-secundario;
+    &:hover {
+        background-color: lighten($color-secundario, 20%);
+    }
+}
+
+.section-loca {
+    background-color: mix($color-central,
+    $color-secundario);
+}
+
+.saturado {
+    color: saturate($color-central, 30%);
+}

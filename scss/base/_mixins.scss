@@ -1,0 +1,30 @@
+@mixin miren {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.mirando {
+    @include miren;
+}
+
+.miranda {
+    @include miren; 
+}
+
+/*Podes incluir varios valores */
+
+@mixin varios($ancho, $display, $center) {
+    width: $ancho;
+    display: $display;
+    justify-content: $center;
+    align-items: center;
+}
+
+.cosas {
+    @include varios(50%, grid ,flex-end )
+}
+
+.mascosas {
+    @include varios(100%, flex , center)
+}
