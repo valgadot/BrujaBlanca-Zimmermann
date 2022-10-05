@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.grid-item ul.cabecera {
+  background-color: #f8f8f8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.grid-item .cabecera__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.wallpaper {
+  background-image: url(../Audiovisuales/Wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.wallpaper .wallpaper__titulo {
+  border-radius: 15vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto;
+  font-family: 'Abril Fatface', cursive;
+  color: #f8f8f8;
+  font-size: 45px;
+}
+
+section.wallpaper .wallpaper__titulo:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 4s;
+  transition: all 4s;
+}
+
+section.wallpaper .wallpaper__titulo .wallpaper__subtitulo {
+  border-radius: 15vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto;
+  font-family: 'Abril Fatface', cursive;
+  color: #f8f8f8;
+  font-size: 25px;
+}
+
+section.wallpaper .wallpaper__titulo .wallpaper__subtitulo:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition: all 4s;
+  transition: all 4s;
+}
+
+/* Ejemplos de mapas 
+1 tienen una key y un valor 
+2 un grupo de propiedades no necesariamente 
+de la misma familia*/
+.border-menu {
+  border: 1px solid #330000;
+}
+
+.bg-fotos {
+  background-color: #090;
+}
+
+.bg-fotos:hover {
+  background-color: lime;
+}
+
+.section-loca {
+  background-color: #4d4d00;
+}
+
+.saturado {
+  color: #990000;
+}
+
+/*Bolsitas con propiedades que podemos reutilizar 
+en muchos lugares*/
+.error, .accept, .disabled {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.error {
+  background-color: red;
+}
+
+.accept {
+  background-color: green;
+}
+
+.disabled {
+  background-color: grey;
+}
+
+.mirando {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.miranda {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/*Podes incluir varios valores */
+.cosas {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mascosas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*
+if (tu viejo === zapatero) {
+    zarpale la lata 
+} else {
+    nos vamo pa la esquina
+}*/
+.bg-condicion {
+  background-color: blue;
+  border: 4px solid gray;
+}
+/*# sourceMappingURL=style.css.map */
